@@ -55,3 +55,6 @@
 [submodule "bundle/vim-tar"]
 	path = bundle/vim-tar
 	url = https://github.com/pholat/vim-tar.git
+[submodule "bundle/vim-markdown"]
+	path = bundle/vim-markdown
+	url = https://github.com/plasticboy/vim-markdown.git
