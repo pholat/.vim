@@ -61,3 +61,18 @@
 [submodule "bundle/vim-tail"]
 	path = bundle/vim-tail
 	url = https://github.com/cosminadrianpopescu/vim-tail.git
+[submodule "bundle/ctrlp.vim"]
+	path = bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "bundle/color_coded"]
+	path = bundle/color_coded
+	url = https://github.com/jeaye/color_coded.git
+[submodule "bundle/YCM-Generator"]
+	path = bundle/YCM-Generator
+	url = https://github.com/rdnetto/YCM-Generator.git
+[submodule "vim-clang-format"]
+	path = vim-clang-format
+	url = https://github.com/rhysd/vim-clang-format.git
+[submodule "bundle/vim-clang-format"]
+	path = bundle/vim-clang-format
+	url = https://github.com/rhysd/vim-clang-format.git
