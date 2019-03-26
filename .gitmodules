@@ -76,3 +76,15 @@
 [submodule "bundle/vim-clang-format"]
 	path = bundle/vim-clang-format
 	url = https://github.com/rhysd/vim-clang-format.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "bundle/vim-rtags"]
+	path = bundle/vim-rtags
+	url = https://github.com/lyuts/vim-rtags.git
+[submodule "bundle/diffconflicts"]
+	path = bundle/diffconflicts
+	url = https://github.com/whiteinge/diffconflicts.git
+[submodule "bundle/vim-pyenv"]
+	path = bundle/vim-pyenv
+	url = https://github.com/lambdalisue/vim-pyenv.git

@@ -30,7 +30,7 @@ let s:themes['default'] = {
 let s:themes['default'].light = {
       \     'TEST_256_COLOR_CONSISTENCY' : 1,
       \     'palette' : {
-      \       'color00' : ['#eeeeee', '255'],
+      \       'color00' : ['#eeeeee', '253'],
       \       'color01' : ['#af0000', '124'], 
       \       'color02' : ['#008700', '28'],
       \       'color03' : ['#5f8700', '64'],
@@ -602,12 +602,12 @@ fun! s:set_color_variables()
   " parameter might not exist, for example, on 16-color terminal, the variables below 
   " only store the color names to use the terminal color palette which is the only
   " thing available therefore no need for GUI-color or 256-color.
-  let s:background = get(s:palette, 'color00') + ['Black']
+  "let s:background = get(s:palette, 'color00') + ['Black']
   let s:negative   = get(s:palette, 'color01') + ['DarkRed']
   let s:positive   = get(s:palette, 'color02') + ['DarkGreen']
   let s:olive      = get(s:palette, 'color03') + ['DarkYellow'] " string
   let s:neutral    = get(s:palette, 'color04') + ['DarkBlue']
-  let s:comment    = get(s:palette, 'color05') + ['DarkMagenta']
+  let s:comment    = get(s:palette, 'color05') + ['Red']
   let s:navy       = get(s:palette, 'color06') + ['DarkCyan'] " storageclass
   let s:foreground = get(s:palette, 'color07') + ['LightGray']
 
@@ -733,7 +733,7 @@ endfun
 fun! s:set_highlightings_variable()
   let s:highlightings = []
   " Normal group should be executed first. Other parts assume that.
-  call s:HL("Normal", s:foreground, s:background, "")
+  "call s:HL("Normal", s:foreground, s:background, "")
 
   call s:HL("Cursor", s:cursor_fg, s:cursor_bg, "")
   call s:HL("NonText", s:nontext, "", "")
@@ -754,7 +754,7 @@ fun! s:set_highlightings_variable()
   call s:HL("WarningMsg", s:pink, "", "")
   call s:HL("MatchParen", s:matchparen_fg, s:matchparen_bg, "")
   call s:HL("Folded", s:folded_fg, s:folded_bg, "")
-  call s:HL("FoldColumn", "", s:background, "")
+  "call s:HL("FoldColumn", "", s:background, "")
   call s:HL("WildMenu", s:wildmenu_fg, s:wildmenu_bg, s:bold)
 
   if version >= 700
@@ -768,7 +768,7 @@ fun! s:set_highlightings_variable()
     call s:HL("CursorColumn", "", s:cursorcolumn, "none")
     call s:HL("PMenu", s:popupmenu_fg, s:popupmenu_bg, "none")
     call s:HL("PMenuSel", s:popupmenu_fg, s:popupmenu_bg, "reverse")
-    call s:HL("SignColumn", s:green, s:background, "none")
+    "call s:HL("SignColumn", s:green, s:background, "none")
   end
   if version >= 703
     call s:HL("ColorColumn", "", s:cursorcolumn, "none")
@@ -1142,7 +1142,7 @@ fun! s:set_highlightings_variable()
   call s:HL("jsonNumber", s:orange, "", "")
   call s:HL("jsonNull", s:purple, "", s:bold)
   call s:HL("jsonBoolean", s:green, "", s:bold)
-  call s:HL("jsonCommentError", s:pink, s:background , "")
+  "call s:HL("jsonCommentError", s:pink, s:background , "")
 
   " Go Highlighting
   call s:HL("goDirective", s:red, "", "")
@@ -1543,7 +1543,7 @@ fun! s:set_highlightings_variable()
   call s:HL("SpellLocal", s:foreground, s:spelllocal, "")
 
   " Plugin: Indent Guides
-  call s:HL("IndentGuidesOdd", "", s:background, "")
+  "call s:HL("IndentGuidesOdd", "", s:background, "")
   call s:HL("IndentGuidesEven", "", s:cursorline, "")
 
   " Plugin: Startify
